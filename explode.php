@@ -12,4 +12,17 @@
 	  $bar[] = implode(" ", $foo);
 	}
 	print_r($bar);
+
+/*second method */
+
+
+	$parts = preg_split('!([^ ]* [^ ]* [^ ]*) !',$str, -1,
+            PREG_SPLIT_DELIM_CAPTURE | PREG_SPLIT_NO_EMPTY);
+
+	var_dump($parts);
+	
+	$parts1 = preg_split('!([^ ]* [^ ]*) !',$str, -1,
+            PREG_SPLIT_DELIM_CAPTURE | PREG_SPLIT_NO_EMPTY);
+
+	var_dump($parts1);
 ?>
